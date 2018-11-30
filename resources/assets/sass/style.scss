@@ -1,0 +1,27 @@
+@import 'variables';
+
+body {
+    background-color: $color-background;
+    color: $color-text-light;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    text-transform: none;
+    /* WebKitブラウザサポート */
+    -webkit-font-smoothing: antialiased;
+    /* Chrome、Safariサポート */
+    text-rendering: optimizeLegibility;
+    /* Firefoxサポート */
+    -moz-osx-font-smoothing: grayscale;
+    /* IEサポート */
+    -webkit-font-feature-settings: 'liga';
+            font-feature-settings: 'liga';
+}

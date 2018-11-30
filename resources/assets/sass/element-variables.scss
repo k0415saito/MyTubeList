@@ -1,0 +1,20 @@
+@import 'variables';
+
+$--color-primary: $color-theme;
+
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+.custom_notify {
+    border: none;
+    background-color: rgba($color-background, 0.8);
+
+    h2 {
+        color: $color-text-light;
+    }
+
+    p {
+        color: $color-text-light;
+    }
+}
