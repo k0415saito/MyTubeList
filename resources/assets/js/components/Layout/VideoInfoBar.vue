@@ -86,7 +86,7 @@ export default {
     }, 
     computed: {
         video() {
-            return this.$store.getters['videos/currentVideo']
+            return this.$store.getters['playingVideo']
         }, 
         timeText() {
             if (this.video && this.currentTime != null) {

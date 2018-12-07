@@ -6,17 +6,9 @@ const state = {
 }
 
 const getters = {
-    // 現在再生中の動画情報を取得
-    currentVideo( state, getters, rootState) {
-        if (rootState.system.playingIndex >= 0 &&
-            rootState.system.playingIndex < state.all.length) {
-            return state.all[rootState.system.playingIndex]
-        }
-        return null
-    }, 
     // 現在再生中の動画の再生時間の秒数を取得
-    currentDurationSeconds( state, getters, rootState) {
-        const video = getters['currentVideo']
+    currentDurationSeconds(state, getters, rootState, rootGetters) {
+        const video = rootGetters['playingVideo']
         if (video) {
             const m = video.duration.match(/(\d+)H(\d+)M(\d+)S/)
             if (m.length == 4) {

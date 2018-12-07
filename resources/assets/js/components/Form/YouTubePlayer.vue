@@ -35,7 +35,7 @@ export default {
         onError(event) {
 
             this.$notify({
-                title: this.$store.getters['videos/currentVideo'].title, type: 'error', offset: 50, customClass: 'custom_notify', 
+                title: this.$store.getters['playingVideo'].title, type: 'error', offset: 50, customClass: 'custom_notify', 
                 message: '動画が再生できません'
             })
             this.$store.dispatch('next')
